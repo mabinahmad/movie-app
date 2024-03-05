@@ -1,0 +1,222 @@
+.movie-edit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 40px;
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  box-shadow: 0 0 10px rgba(9, 9, 9, 0.4);
+}
+
+.movie-edit h1 {
+  margin: 10px;
+  color: rgb(155, 45, 64);
+}
+
+.movie-edit form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10px;
+  margin-top: 20px;
+}
+.movie-edit .upload-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  width: 400px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+.movie-edit .upload-image input {
+  height: 100px;
+  width: 400px;
+  border-radius: 10px;
+  z-index: 2;
+  cursor: pointer;
+  opacity: 0;
+}
+.movie-edit .upload-image button {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  width: 400px;
+  border: none;
+  z-index: 1;
+  border: 3px dotted #efd9c2;
+  outline: none;
+  border-radius: 10px;
+  background-color: white;
+}
+.movie-edit .upload-image button .upload-image-icon img {
+  height:90px;
+  width:150px;
+  object-fit: cover;
+}
+.movie-edit form .title {
+  width: 400px;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+}
+.movie-edit .rating-length {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.movie-edit form .rating-length .ratings {
+  width: 200px;
+  margin-top: 5px;
+}
+
+.movie-edit form .rating-length .ratings input {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.movie-edit form .length input {
+  width: 170px;
+  height: 50px;
+  border-radius: 5px;
+  margin-top: 5px;
+  border: 0.5px solid;
+  padding: 0px 10px 0px 10px;
+  font-size: large;
+  outline: none;
+}
+
+.movie-edit form .title input {
+  height: 50px;
+  width: 400px;
+  border-radius: 5px;
+  margin-top: 5px;
+  border: 0.5px solid;
+  padding: 0px 10px 0px 10px;
+  font-size: large;
+  outline: none;
+}
+.movie-edit .form-group {
+  margin-bottom: 30px;
+}
+
+.movie-edit form .ratings input {
+  width: 100%;
+  margin-top: 5px;
+}
+
+.movie-edit .genres {
+  width: 100%;
+}
+.movie-edit .genres .genres-collection {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  box-sizing: border-box;
+  margin-top: 15px;
+  margin-bottom: 30px;
+  height: 100px;
+  overflow-y: auto;
+}
+
+.movie-edit .genres-collection .genre {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.movie-edit .genres-collection .genre input {
+  margin-right: 5px;
+}
+
+.movie-edit form .buttons-submit-and-cancel {
+  padding: 10px;
+}
+.movie-edit form .buttons-submit-and-cancel .cancel-button {
+  width: 100px;
+  height: 50px;
+  background-color: rgb(109, 142, 109);
+  margin-right: 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: large;
+  font-weight: bold;
+  cursor: pointer;
+}
+.movie-edit form .buttons-submit-and-cancel .submit-button {
+  width: 100px;
+  height: 50px;
+  border-radius: 5px;
+  border: none;
+  background-color: rgb(90, 14, 27);
+  color: white;
+  font-size: large;
+  cursor: pointer;
+}
+.error-message {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+@media screen and (max-width: 1200px) {
+  .movie-edit {
+    margin-top: 100px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .movie-edit {
+    width: 90%;
+    padding: 10px;
+  }
+  .movie-edit form {
+    width: 90%;
+  }
+  .movie-edit .upload-image {
+    width: 250px;
+  }
+
+  .movie-edit .upload-image input {
+    width: 250px;
+  }
+
+  .movie-edit .upload-image button {
+    width: 250px;
+  }
+
+  .movie-edit form .title input {
+    width: 100%;
+  }
+
+  .movie-edit form .title {
+    width: 100%;
+  }
+
+  .movie-edit .rating-length {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .movie-edit form .ratings {
+    margin-bottom: 20px;
+  }
+  .movie-edit .genres .genres-collection {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .movie-edit form .buttons-submit-and-cancel .submit-button,
+  .movie-edit form .buttons-submit-and-cancel .cancel-button {
+    width: 80px;
+  }
+  .movie-edit form .buttons-submit-and-cancel .cancel-button {
+    margin-bottom: 5px;
+  }
+}

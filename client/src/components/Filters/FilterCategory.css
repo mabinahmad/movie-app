@@ -1,0 +1,36 @@
+.filter-category {
+  display: flex;
+  overflow-x: auto;
+  white-space: nowrap;
+  padding: 10px;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+}
+.filter-category::-webkit-scrollbar {
+  display: none; /* WebKit browsers */
+}
+.category-name {
+  display: inline-block;
+  margin-right: 10px;
+  padding: 8px;
+  background-color: #e0e0e0;
+  border-radius: 5px;
+  height: 35px;
+  cursor: pointer;
+}
+
+.category-name:hover {
+  background-color: #a0a0a0;
+  color: #fff;
+}
+
+.category-name.active {
+  background-color: rgb(154, 10, 10);
+  color: white;
+}
+/* Media query for screens between 415px and 768px */
+@media screen and (min-width: 415px) and (max-width: 768px) {
+  .filter-category {
+    margin-left: 10px;
+  }
+}

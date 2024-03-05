@@ -1,0 +1,124 @@
+.movie-card {
+  position: relative;
+  box-sizing: border-box;
+  flex-direction: column;
+  margin-bottom: 20px;
+  height: 400px;
+  height: auto;
+  border-radius: 10px;
+
+}
+.movie-image {
+  position: relative;
+}
+.movie-card img {
+  width: 250px;
+  height: 270px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.movie-details {
+  padding-left: 10px;
+  bottom: 0px;
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  /* height: 60px; */
+  height: auto;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+.movie-details .movie-length {
+  position: absolute;
+  top: 246px;
+  border-radius: 5px;
+  color: white;
+  background-color: rgba(3, 3, 3, 0.3);
+  backdrop-filter: blur(7px);
+}
+.movie-details h3,
+.movie-details .genre-text {
+  color: white;
+}
+.movie-details h3,
+.movie-details .genre-text {
+  margin-top: 6px;
+}
+
+.star-and-rating {
+  position: absolute;
+  top: 242px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5px;
+  padding: 2px 5px 2px 5px;
+  right: 5px;
+  border-radius: 5px;
+  background-color: white;
+}
+.star-rating {
+  font-size: 0.8em;
+  color: rgb(247, 163, 30);
+}
+.watch-later-button {
+  /* position: relative; */
+  margin-top: 15px;
+  width: 30px;
+  padding: 0px 5px;
+  margin-bottom: 3px;
+  border: none;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.watch-later-icon {
+  font-size: 25px;
+  font-weight: bold;
+  color: rgb(237, 75, 75);
+}
+
+.watch-later-button .tooltip {
+  display: block;
+  position: absolute;
+  background-color: #333;
+  color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+  bottom: -20px;
+  left: 100px;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  z-index: 1;
+  font-size: 14px;
+}
+.added {
+  color: green;
+}
+
+@media screen and (min-width: 485px) and (max-width: 1024px) {
+  .movie-card {
+    width: 201px;
+  }
+  .movie-card img {
+    width: 200px;
+    flex-basis: 23%;
+  }
+  .movie-details {
+    width: 100%;
+    height: auto;
+    padding-right: 5px;
+  }
+}
+
+@media screen and (max-width: 484px) {
+  .movie-card {
+    flex-direction: column;
+    width: 100%;
+  }
+  .movie-card img {
+    width: 100%;
+  }
+}

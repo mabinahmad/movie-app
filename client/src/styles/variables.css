@@ -1,0 +1,11 @@
+:root {
+  --primary-color: #007bff;
+  --secondary-color: #ff5733;
+  --font-family: " Roboto";
+  --background-color-light-mode: rgba(36, 29, 29, 0.7);
+  --background-color-dark-mode: rgba(0, 0, 0, 0.9);
+  --text-color-dark: #000000;
+  --text-color-light: #ffffff;
+  --background-white: white;
+  --font-family-roboto: "Roboto";
+}

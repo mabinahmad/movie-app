@@ -1,0 +1,165 @@
+.all-genres-list-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
+  margin-bottom: 50px;
+  box-sizing: border-box;
+}
+
+.all-genres-list-container .genres-list {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin-top: 70px;
+  overflow-y: auto;
+  background-color: white;
+  padding: 30px;
+  margin-left: 20px;
+  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.2);
+}
+
+.all-genres-list-container .allgenres-text-and-genre-add-button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.all-genres-list-container .allgenres-text-and-genre-add-button h1 {
+  color: blue;
+}
+
+.all-genres-list-container
+  .allgenres-text-and-genre-add-button
+  .genre-add-button {
+  width: 150px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #8fd8e8;
+  color: blue;
+  font-size: large;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 1px 1px 9px #8fd8e8;
+}
+.all-genres-list-container
+  .allgenres-text-and-genre-add-button
+  .genre-add-button:hover {
+  background-color: #1f93e1;
+  color: white;
+}
+.all-genres-list-container .genres-table {
+  width: 100%;
+  overflow-x: auto;
+  border-collapse: collapse;
+}
+
+.all-genres-list-container .genres-table-header {
+  background-color: #d7ecf1;
+  color: #7108d7;
+  border-collapse: collapse;
+}
+
+.all-genres-list-container .genres-table th {
+  height: 50px;
+  text-align: left;
+  white-space: nowrap; 
+}
+.all-genres-list-container .genres-table tbody tr td {
+  height: 50px;
+  white-space: nowrap; 
+}
+/* Increase width for the Title column */
+.genres-table th:nth-child(2) {
+  width: 60%;
+}
+
+.column-actions {
+  width: 25%;
+}
+
+.button-edit,
+.button-delete {
+  padding: 5px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.button-edit {
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 5px;
+  border: none;
+  width: 60px;
+}
+
+.button-delete {
+  background-color: #dc3545;
+  color: #fff;
+  border-radius: 5px;
+  border: none;
+  width: 60px;
+}
+
+.genres-table tbody tr:nth-child(even) {
+  background-color: rgb(235, 255, 235); /* Even row background color */
+}
+
+.genres-table tbody tr:nth-child(odd) {
+  background-color: #f9f0f0; /* Odd row background color */
+}
+
+@media screen and (max-width: 1200px) {
+  .all-genres-list-container {
+    align-items: center;
+    margin-top: 20px;
+  }
+  .allgenres-text-and-genre-add-button {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .genre-list {
+    margin-left: 0px;
+  }
+  .all-genres-list-container .genres-table th:first-child,
+  .all-genres-list-container .genres-table td:first-child {
+    width: 50px;
+  }
+
+  .all-genres-list-container .genres-table th:nth-child(2),
+  .all-genres-list-container .genres-table td:nth-child(2) {
+    width: 45%;
+  }
+
+  .all-genres-list-container .genres-table th:nth-child(3),
+  .all-genres-list-container .genres-table td:nth-child(3) {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .all-genres-list-container .genres-list {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin-top: 20px;
+    margin-left: 0px;
+  }
+
+  .button-edit {
+    margin-bottom: 5px;
+  }
+  .genres-table-container {
+    overflow: auto;
+  }
+  .genres-table-header {
+    font-size: 13px;
+  }
+  .genres-table tbody td {
+    font-size: 12px;
+  }
+}

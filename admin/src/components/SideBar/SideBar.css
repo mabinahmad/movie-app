@@ -1,0 +1,135 @@
+.sidebar {
+  width: 250px;
+  height: 440px;
+  margin-left: 20px;
+  margin-top: 16px;
+  background-color: white;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  position: fixed;
+  border-radius: 10px;
+  /* z-index: 1001; */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+}
+
+ul {
+  list-style-type: none;
+}
+ul a {
+  text-decoration: none;
+}
+
+.sidebar .sidebar-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 50px;
+  height: 60px;
+  padding: 10px 20px 10px 20px;
+}
+
+.sidebar .sidebar-header h2 {
+  color: #1c5fa6;
+}
+.nav-item {
+  margin-bottom: 10px;
+  height: 40px;
+  width: 230px;
+  margin-left: 10px;
+  padding-left: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+.nav-item:hover {
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.nav-item div {
+  cursor: pointer;
+  color: black;
+  font-weight: bold;
+  padding-top: 7px;
+  font-size: larger;
+  height: 40px;
+}
+.dashboard-text {
+  color: rgb(204, 9, 100);
+}
+.movies-text {
+  color: #a93b03;
+}
+.users-text {
+  color: #d09809;
+}
+.genres-text {
+  color: #44acf0;
+}
+
+.sidebar .dashboard-nav.active {
+  background-color: rgb(246, 224, 234);
+}
+
+.sidebar .movies-nav.active {
+  background-color: #ffe7db;
+}
+
+.sidebar .users-nav.active {
+  background-color: #fef7da;
+}
+
+.sidebar .genres-nav.active {
+  background-color: #def1ff;
+}
+
+.logout {
+  width: 230px;
+  margin-top: auto; /* Pushes the logout section to the bottom */
+  padding: 10px;
+  text-align: center;
+  color: red;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 3px 8px rgba(0.1, 0, 0, 0.5);
+}
+.logout:hover {
+  background-color: #dd0d0d;
+  color: white;
+}
+
+@media screen and (max-width: 1200px) {
+  .sidebar {
+    display: none;
+    border-radius: 6px;
+    position: absolute;
+  }
+  .sidebar.active-sidebar {
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 30px;
+    width: 200px;
+    z-index: 1000;
+    height: 310px;
+    padding-top: 20px;
+  }
+
+  .sidebar.active-sidebar .sidebar-header {
+    display: none;
+  }
+  .sidebar.active-sidebar .logout {
+    width: 180px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+  }
+  .sidebar.active-sidebar .nav-item {
+    width: 180px;
+    margin-bottom: 20px;
+  }
+}

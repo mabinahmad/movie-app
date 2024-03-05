@@ -1,0 +1,26 @@
+.spinner-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: red;
+}
+
+.spinner-border {
+  width: 3rem;
+  height: 3rem;
+  color: #007bff;
+  border-width: 0.25em;
+  border-top-color: currentColor;
+  border-right-color: currentColor;
+  border-bottom-color: currentColor;
+  border-left-color: transparent;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

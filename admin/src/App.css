@@ -1,0 +1,34 @@
+.app {
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: white;
+
+}
+.main-content {
+  box-sizing: border-box;
+  margin-left: 280px;
+}
+@media screen and (min-width: 1201px) {
+  .header-container {
+    display: none;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .main-content {
+    margin-left: 0px;
+  }
+  
+}
+
+@media screen and (max-width: 768px) {
+  .main-content {
+    padding-top: 50px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .main-content {
+    margin-left: 10px;
+  }
+}

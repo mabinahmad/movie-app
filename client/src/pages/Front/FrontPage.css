@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap");
+
+.front-page {
+  background-color: rgba(0, 0, 0, 0.5);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+.front-page .contents {
+  margin-top: 210px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  padding: 10px;
+}
+.front-page .contents h1 {
+  font-family: "Open Sans";
+  font-size: 3rem;
+  font-weight: 800;
+}
+.front-page .contents p {
+  font-size: 22px;
+}
+
+.front-page .contents .get-started-button {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 200px;
+  padding: 15px;
+  font-size: 25px;
+  background: #e50914;
+  color: white;
+  font-weight: bold;
+  border: none;
+  outline: none;
+
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.front-page .contents .get-started-button:hover {
+  background: darkred;
+}
+
+@media screen and (max-width: 1200px) {
+  .front-page .contents {
+    margin-top: 100px;
+    width: 90%;
+  }
+  .front-page .contents h1 {
+    font-size: 30px;
+    text-align: center;
+  }
+  .front-page .contents p {
+    text-align: center;
+  }
+}
