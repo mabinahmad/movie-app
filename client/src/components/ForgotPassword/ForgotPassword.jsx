@@ -10,7 +10,7 @@ import "./ForgotPassword.css";
 // API endpoints from .env file
 //=========================================================================
 const API_FORGOT_PASSWORD = import.meta.env.VITE_API_FORGOT_PASSWORD;
-const API_VERIFY_OTP = "http://localhost:3005/users/verify-otp";
+const API_VERIFY_OTP = import.meta.env.VITE_API_VERIFY_OTP;
 const API_RESET_PASSWORD = import.meta.env.VITE_API_RESET_PASSWORD;
 //=========================================================================
 
@@ -145,7 +145,8 @@ export const ForgotPassword = () => {
               type="email"
               placeholder="Enter email"
               value={email}
-              onChange={handleChange} className="input-field email-input"
+              onChange={handleChange}
+              className="input-field email-input"
             />
             <button type="submit">Reset Password</button>
           </form>
