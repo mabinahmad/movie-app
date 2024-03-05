@@ -81,7 +81,7 @@ export const ForgotPassword = () => {
         token,
         otp,
       });
-      console.log(response, "response");
+
       // Show success toast and proceed to new password input step
       if (response.status === 200) {
         toast.success(response.data.message);
