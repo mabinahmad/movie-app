@@ -196,7 +196,9 @@ export const Header = () => {
         </div>
         {/* Tooltip for user name */}
         {showUserNameToolTip && (
-          <div className="tooltip-username">{currentUser.username}</div>
+          <div className="tooltip-username">
+            {currentUser.username.toUpperCase()}
+          </div>
         )}
       </div>
     </div>
