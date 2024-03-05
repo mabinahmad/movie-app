@@ -16,7 +16,7 @@ app.use(
   cors({
     // origin: "http://localhost:5174",
     origin: [
-      "https://movie-app-client-plum.vercel.app/", //client app
+      "https://movie-app-client-plum.vercel.app", //client app
       "https://movie-app-admin-panel-vl25.vercel.app", //admin panel
     ],
     credentials: true,
