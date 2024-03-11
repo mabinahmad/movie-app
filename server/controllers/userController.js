@@ -3,7 +3,7 @@ const { generateOTP, sendEmailOTP } = require("../utils/otp");
 const {
   generateAccessToken,
   generateRefreshToken,
-  verifyOtpToken,
+  verifyOtpToken,  verifyRefreshToken,
   generateOtpToken,
 } = require("../utils/jwt");
 
