@@ -10,7 +10,7 @@ This Movie App is a web application built with React,MongoDB,Express.js and Node
 ## Live Demo
 Explore the project deployed on Vercel:
 
-- **Movie App Client**: Access the client application [here](https://movie-app-nine-drab.vercel.app/). Create an account to unlock the full functionality of the application.If you wish to log in as the current customer, please use the following credentials:
+- **Movie App Client**: Access the client application [here](https://movie-app-client-plum.vercel.app/). Create an account to unlock the full functionality of the application.If you wish to log in as the current customer, please use the following credentials:
 
    **Movie App Login Credentials:**
   - **Email**: customer1@gmail.cm
@@ -22,7 +22,7 @@ Explore the project deployed on Vercel:
   - **Email**: admin@netfilm.cm
   - **Password**: 123123
 
-**Please note** that changes made in the [Admin Panel](https://movie-app-admin-panel-vl25.vercel.app/) will not be reflected in the [Movie App Client](https://movie-app-nine-drab.vercel.app/). The movie app client  and  admin panel operate independently and have separate databases. 
+**Please note** that changes made in the [Admin Panel](https://movie-app-admin-panel-vl25.vercel.app/) will not be reflected in the [Movie App Client](https://movie-app-client-plum.vercel.app/). The movie app client  and  admin panel operate independently and have separate databases. 
  You can view changes in the admin panel or download the repository and work on it.
 
 
