@@ -6,7 +6,9 @@ This repository serves as a learning resource for beginner developers and learne
 ## Overview
 This Movie App is a web application built with React,MongoDB,Express.js and Node.js . It allows users to browse, search, and discover movies. Users can explore a collection of movies, view details, and save favorites. It includes an admin dashboard where administrators can manage movies, genres, and user accounts. Administrators have the ability to add, edit, and delete movies, genres and add and delete user accounts(admin) as well as manage user accounts by changing their status.
 
+ ![Image of screenshot](https://res.cloudinary.com/dewu0skfo/image/upload/v1709236287/movieapp%20images/tabletview_f5ro0f.png) 
 
+ ![Image of screenshot](https://res.cloudinary.com/dewu0skfo/image/upload/v1709301519/movieapp%20images/dashboardbigscreen_gxprxr.png)
 ## Live Demo
 Explore the project deployed on Vercel:
 
